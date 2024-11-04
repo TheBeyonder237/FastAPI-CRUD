@@ -1,55 +1,59 @@
-# FastAPI CRUD Project
+
+# Books API
+
+## Description
+This is a REST API for a book review web service that enables users to create, manage, and review books. The API includes authentication features for user management and token-based access, allowing for secure interactions with the review and tagging systems.
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Project Setup](#project-setup)
 - [Running the Application](#running-the-application)
 - [Running Tests](#running-tests)
 - [Contributing](#contributing)
 
-## Introduction
-Follow these steps to set up and run your FastAPI project.
+## Getting Started
+Follow these instructions to set up and run the Books API project.
 
 ## Prerequisites
-Ensure you have the following installed:
+Ensure the following are installed:
 - **Python** >= 3.10
 - **PostgreSQL**
 - **Redis**
 
 ## Project Setup
-1. Clone the project repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/TheBeyonder237/FastAPI-CRUD.git
    ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
    ```bash
    cd fastapi-beyond-CRUD/
    ```
 
-3. Create and activate a virtual environment:
+3. **Create and activate a virtual environment**:
    ```bash
    python3 -m venv env
    source env/bin/activate
    ```
 
-4. Install the required dependencies:
+4. **Install the required dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-5. Set up environment variables by copying the example configuration:
+5. **Set up environment variables**:
    ```bash
    cp .env.example .env
    ```
 
-6. Run database migrations to initialize the database schema:
+6. **Run database migrations**:
    ```bash
    alembic upgrade head
    ```
 
-7. Open a new terminal, activate your virtual environment, and start the Celery worker (Linux/Unix shell):
+7. **Start the Celery worker** (Linux/Unix):
    ```bash
    sh runworker.sh
    ```
@@ -60,16 +64,20 @@ To start the application:
 fastapi dev src/
 ```
 
-### Alternatively, Run the Application with Docker
+### Using Docker
+Alternatively, run the application with Docker:
 ```bash
 docker compose up -d
 ```
 
 ## Running Tests
-Run the tests using the following command:
+To execute tests:
 ```bash
 pytest
 ```
 
 ## Contributing
-Feel free to fork this repository and submit pull requests with improvements or bug fixes.
+You are welcome to fork the repository and submit pull requests for improvements or fixes.
+
+## Contact
+For further questions or suggestions, reach out via email: [davidngoue@orizonne.net](mailto:davidngoue@orizonne.net)
